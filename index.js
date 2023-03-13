@@ -12,7 +12,6 @@ app.use(cors())
 
 mongoose.connect(`mongodb+srv://ivanberruet95:${password}@cluster0.vi4sk3x.mongodb.net/traductor-angie?retryWrites=true&w=majority`)
 
-
 //==== GET ALL WORDS
 app.get("/getWords", async (req,res)=>{
 	try {
@@ -59,6 +58,6 @@ app.put("/edit/:id", async (req,res)=>{
 
 
 
-app.listen(process.env.PORT || 3001, ()=>{	
-	console.log("Server running")
-})
+app.listen(process.env.PORT || 3001, ()=>
+	console.log("Server Running")
+)
